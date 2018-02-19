@@ -1,2 +1,4 @@
 checkstyleMain.exclude '**/javax/measure/**'
 
+/* skip "testOSGI" task */
+project.tasks.testOSGi.enabled = false

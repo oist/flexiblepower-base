@@ -15,3 +15,6 @@ Export-Package:  \
 	org.flexiblepower.observation,\
 	org.flexiblepower.observation.ext,\
 	org.flexiblepower.time
+Test-Cases: \
+	org.flexiblepower.observation.ObservationTest,\
+	org.flexiblepower.observation.ObservationTranslationHelperTest
