@@ -1,20 +1,19 @@
 -buildpath: \
-	biz.aQute.bnd.annotation;version="[1.43,3.0)",\
+	biz.aQute.bnd.annotation;version=3.5.0,\
 	osgi.core;version="[4.3,5.0)",\
 	osgi.cmpn;version="[4.3,5.0)"
--testpath: ${test-buildpath}
-
+-testpath: \
+	org.hamcrest:hamcrest-core;version=latest,\
+	org.mockito.mockito-all;version=latest,\
+	junit:junit;version="[4.11,5.0)"
 Bundle-Version: 3.0.0.${qualifier}
 Export-Package:  \
-	javax.measure,\
-	javax.measure.converter,\
-	javax.measure.quantity,\
-	javax.measure.unit,\
-	org.flexiblepower.context,\
-	org.flexiblepower.messaging,\
-	org.flexiblepower.observation,\
-	org.flexiblepower.observation.ext,\
-	org.flexiblepower.time
-Test-Cases: \
-	org.flexiblepower.observation.ObservationTest,\
-	org.flexiblepower.observation.ObservationTranslationHelperTest
+	javax.measure;-noimport:=true,\
+	javax.measure.converter;-noimport:=true,\
+	javax.measure.quantity;-noimport:=true,\
+	javax.measure.unit;-noimport:=true,\
+	org.flexiblepower.context;-noimport:=true,\
+	org.flexiblepower.messaging;-noimport:=true,\
+	org.flexiblepower.observation;-noimport:=true,\
+	org.flexiblepower.observation.ext;-noimport:=true,\
+	org.flexiblepower.time;-noimport:=true
