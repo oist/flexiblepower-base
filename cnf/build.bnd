@@ -4,5 +4,5 @@ javac.target: 1.7
 Bundle-Category: FlexiblePower Application Infrastructure
 qualifier: SNAPSHOT-${tstamp}
 
-#-baseline: *
-#-baselinerepo: FPAI Core Current Release
+-baseline: Release
+-baselinerepo: Release
