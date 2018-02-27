@@ -2,7 +2,7 @@ javac.source: 1.8
 javac.target: 1.8
 
 Bundle-Category: FlexiblePower Application Infrastructure
-qualifier: SNAPSHOT-${tstamp}
+qualifier: repoOIST-SNAPSHOT-${tstamp}
 
 -baseline: Release
 -baselinerepo: Release
