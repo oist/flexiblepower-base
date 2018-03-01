@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1519879045000" name="Release" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="flexiblepower.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="6ec5089c75de30f90becd1a0b87c49d31441410c0a4c4f683e1ca6426c9c7a4b"/>
+      <attribute name="url" value="flexiblepower.api/flexiblepower.api-3.0.0.jar"/>
+      <attribute name="size" type="Long" value="247947"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.measure"/>
+      <attribute name="version" type="Version" value="5.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <directive name="uses" value="javax.measure.quantity,javax.measure.unit"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.measure.converter"/>
+      <attribute name="version" type="Version" value="5.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.measure.quantity"/>
+      <attribute name="version" type="Version" value="5.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <directive name="uses" value="javax.measure.unit"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="javax.measure.unit"/>
+      <attribute name="version" type="Version" value="5.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <directive name="uses" value="javax.measure.converter,javax.measure.quantity"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.flexiblepower.context"/>
+      <attribute name="version" type="Version" value="1.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <directive name="uses" value="javax.measure,javax.measure.quantity"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.flexiblepower.messaging"/>
+      <attribute name="version" type="Version" value="1.1.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.flexiblepower.observation"/>
+      <attribute name="version" type="Version" value="2.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.flexiblepower.observation.ext"/>
+      <attribute name="version" type="Version" value="2.1.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <directive name="uses" value="org.flexiblepower.observation,org.osgi.framework"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="org.flexiblepower.time"/>
+      <attribute name="version" type="Version" value="1.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <attribute name="bundle-symbolic-name" value="flexiblepower.api"/>
+      <attribute name="bundle-version" type="Version" value="3.0.0.repoOIST-SNAPSHOT-201803010437"/>
+      <directive name="uses" value="javax.measure,javax.measure.quantity,javax.measure.unit"/>
+    </capability>
+    <requirement namespace="osgi.wiring.package">
+      <directive name="filter" value="(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))"/>
+    </requirement>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.8))"/>
+    </requirement>
+  </resource>
+</repository>
