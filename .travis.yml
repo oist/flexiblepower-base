@@ -1,0 +1,21 @@
+sudo: false
+
+language: java
+
+os:
+  - linux
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - cnf/cache
+
+branches:
+  only:
+    - dev-oist
+
+install: true
+
+script:
+  - gradle check
