@@ -5,5 +5,5 @@
 @Version("2.0.0.${qualifier}")
 package org.flexiblepower.observation;
 
-import aQute.bnd.annotation.Version;
+import org.osgi.annotation.versioning.Version;
 

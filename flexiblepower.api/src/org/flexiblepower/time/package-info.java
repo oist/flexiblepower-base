@@ -4,5 +4,5 @@
 @Version("1.0.0.${qualifier}")
 package org.flexiblepower.time;
 
-import aQute.bnd.annotation.Version;
+import org.osgi.annotation.versioning.Version;
 
